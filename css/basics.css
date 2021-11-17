@@ -1,0 +1,25 @@
+*{
+    padding:"0px";
+    margin:"0px"
+}
+p{
+    color:blueviolet
+}
+body{
+    background-image: url(../images/unsplashnew.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color:rgba(30,30,30, 0.5);
+    border-left: 10px solid brown;
+}
+ul {
+    display: "flex";
+    list-style-type: none;
+    justify-content: space-around;
+}
+

@@ -1,0 +1,59 @@
+/*
+ Ways to apply styles
+ 1. Internal - group of elements - <style></style>
+ 2. Inline - element wise - style="color:white"
+ 3. External -<link rel="stylesheet" href=""/>
+
+selectors - helps to identify elements in a 
+ Universal selector
+ tag selector
+ class selector
+ id selector
+*/
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+#container{
+    margin:20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 60px auto 60px;
+    grid-gap: 30px;
+    grid-template-areas: "header header"
+    "aside main"
+    "footer footer";
+    
+}
+
+ul.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type:none;
+}
+ul{
+    list-style-type: none;
+    padding: 20px;
+}
+li{
+    margin-bottom: 20px;
+}
+header {
+    background-color: burlywood;
+    grid-area: header;
+    padding-bottom: 20px;
+}
+footer {
+    background-color:cadetblue ;
+    grid-area:footer;
+}
+aside {
+    background-color: coral;
+    grid-area: aside;
+}
+main {
+    background-color: darkcyan;
+    grid-area: main;
+}

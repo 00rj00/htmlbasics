@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <div style="display: inline;">
+        <p style="width: 500px;">t is a long established fact that a reader will be distracted by the readable content
+            of
+            a page when looking
+            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+            as opposed to using 'Content here, content here', making it look like readable English. Many desktop
+            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <img src="images\unsplashnew.jpg" alt="food" width="100" height="100" style="float:right" />
+    </div>
+    <!--
+    <a href="http://google.com" target="_self">
+        <img src="images\unsplashnew.jpg" alt="food" width="300" height="300" />
+    </a>-->
+    <form>
+        <label>Search</label>
+        <input type="search" id="search" name="search" autofocus list="country" />
+        <datalist id="country">
+            <option value="Australia">
+            <option value="Austria">
+            <option value="Algeria">
+            <option value="Andorra">
+            <option value="Angola">
+        </datalist>
+    </form>
+    <h3>Login Form</h3>
+    <form method="" action="">
+        <label>Username</label>
+        <input type="text" required pattern="[a-zA-Z0-9]{3,}" /><br />
+        <label>Password</label>
+        <input type=" password" required " /><br />
+        <label>
+            Select Role:
+        </label> <br />
+        <select>
+            <option value=" admin">Admin</option>
+        <option value="customer">Customer</option>
+        </select><br />
+        <input type="submit" value="Login" />
+    </form>
+    <form>
+        <h3>Registration Form</h3>
+        <label>FirstName</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter first name" /><br />
+        <label>LastName</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter last name" /><br />
+        <label>Email</label>
+        <input type="email" value="abc@gmail.com" readonly size="20" /><br />
+        <label>Password</label>
+        <input type="password" maxlength="3" /> <br />
+        <label>ContactNo</label>
+        <input type="tel" /><br />
+        <label>DOB</label>
+        <input type="date" /><br />
+        <label>Gender</label><br />
+        <input type="radio" id="male" name="gender" />
+        <label>Male</label>
+        <input type="radio" id="female" name="gender" />
+        <label>Female</label> <br />
+        <input type="checkbox" />
+        <label>I agree terms & conditions</label><br />
+        <input type="checkbox" />
+        <label>Would you like to subscribe?</label></br>
+
+        <input type="submit" />
+        <input type="reset" disabled />
+    </form>
+
+    <br />
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Username</label></td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" /></td>
+            </tr>
+            <tr>
+                <td><label>
+                        Role
+                    </label></td>
+                <td><select>
+                        <option value="admin">Admin</option>
+                        <option value="customer">Customer</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Login" /></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

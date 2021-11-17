@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet" type="css/text">
+    <style>
+        * {
+            margin-top: 70px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 70px;
+            margin: 10px;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+
+        #items {
+            display: flex;
+            list-style-type: none;
+            background-color: rgba(120, 120, 120, 0.4);
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        /*applying styles for group of elements */
+        a,
+        p {
+            font-size: 20px;
+        }
+
+        .listItem {
+            margin: 20px;
+            background-color: #606060;
+            padding: 20px;
+
+        }
+
+
+
+       /* li:nth-child(2) {
+            background-color: red;
+        }
+
+        li:nth-child(even) {
+            background-color: yellow;
+
+        }
+
+
+        li:nth-child(odd) {
+            background-color: orange;
+        }
+
+        li:first-child {
+            background-color: purple;
+        }
+
+        li:last-child {
+            background-color: sandybrown;
+        }
+        */
+
+        #body {
+            background-color:green;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: whitesmoke;
+        }
+
+        div>div#div1>p {
+            font-family: cursive;
+            background-color: green;
+            font-size: 20px;
+        }
+
+        div,
+        ul {
+            background-color: green;
+            font-style: italic;
+        }
+
+        a:hover {
+            color: slategray;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="items">
+        <li class="listItem"><a href="page1.htm" target="_blank">item1</a></li>
+        <li class="listItem"><a href="page2.html" target="_blank">item2</a></li>
+        <li class="listItem"><a href="#">item3</a></li>
+        <li class="listItem"><a href="#">item4</a></li>
+    </ul>
+    <div id="body">
+        <p><span
+                style="color:whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;background-color: coral;">Lorem
+                ipsum</span> dolor sit amet consectetur adipisicing elit.
+            Minus excepturi iste
+            amet qui veniam
+            maxime, fugiat
+            culpa numquam suscipit, ad quia, porro voluptatem quam voluptatibus facilis eos molestias vel? Illo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel unde repellat reiciendis libero,
+            laudantium
+            ex iusto a hic sapiente illo necessitatibus veritatis ducimus possimus error at! Quaerat, possimus sequi?
+        </p>
+        <div id="div1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea animi saepe optio officia. Optio
+                recusandae vero, ad voluptas aperiam nemo, a velit cupiditate fugiat quas in ut fuga incidunt.</p>
+        </div>
+        <div style="display:flex">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt
+                praesentium quis
+                dignissimos dicta deleniti
+                iusto, perferendis sequi velit dolore quaerat vel minus nemo natus voluptatibus aperiam modi itaque
+                nostrum.
+            </p>
+            <!--
+        <img src="../html/images/unsplashnew.jpg" />-->
+        </div>
+
+    </div>
+
+</body>
+
+</html>

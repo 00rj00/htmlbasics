@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        form {
+            border: 3px solid gray;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: honeydew;
+        }
+
+        input:invalid,
+        select:invalid,
+        textarea:invalid {
+            border-color: red;
+            }
+        
+   /*     input:required {
+            background-color: red;
+        }
+     */
+
+
+        input:checked {
+            background-color: blue;
+            margin: 10px;
+        }
+
+        h1 {
+            font-family: cursive;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+       
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: orangered;
+        }
+        a:hover {
+            color: green;
+            font-size: 20px;
+
+        }
+        a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form>
+        <label style="font-family: cursive;">Email</label><br />
+        <input type="email" required />
+        <br />
+        <label style="font-family: cursive;">Password</label><br />
+        <input type="password" required />
+        <br />
+        <input type="checkbox" /><br />
+        <input type="submit" value="Login" style="font-family: cursive;"/>
+        <br />
+        <a href="http://youtube.com" target="_blank">YouTube</a>
+        <br />
+        <!--relative path-->
+        <a href="basics.html" target="_blank">basics</a>
+         <br />
+    </form>
+    
+</body>
+
+</html>

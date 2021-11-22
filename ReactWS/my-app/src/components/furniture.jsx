@@ -62,6 +62,13 @@ class Furniture extends Component {
                 <td>{furniture.furnitureModel}</td>
                 <td>{furniture.price}</td>
                 <td>
+                  <Link to={`/furnitures/update/${furniture.furnitureId}`}>
+                    <input
+                      type="button"
+                      value="Update"
+                      className="btn btn-secondary me-2"
+                    />
+                  </Link>
                   <input
                     type="button"
                     value="Delete"

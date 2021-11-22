@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 
-class FurnitureForm extends React.Component {
+class FurnitureUpdate extends React.Component {
   state = {
     furniture: {
       furnitureName: "",
@@ -10,6 +10,17 @@ class FurnitureForm extends React.Component {
       price: "",
     },
   };
+  componentDidMount() {
+    axios
+      .get(
+        `http://localhost:8080/api/displayFurniture/getAllFurnitureDetails/getFurnitureDetails/${this.props.match.params.furnitureId}`
+      )
+      .then((res) => {
+        console.log(res);
+        this.setState({ furnitures: res.data });
+      })
+      .catch((err) => console.log(err));
+  }
   handleChange = (event) => {
     const stu = { ...this.state.furniture };
     stu[event.target.name] = event.target.value;
@@ -21,8 +32,8 @@ class FurnitureForm extends React.Component {
     event.preventDefault();
     console.log("Clicked");
     axios
-      .post(
-        "http://localhost:8080/api/displayFurniture/addFurniture",
+      .put(
+        `http://localhost:8080/api/displayFurniture/updateFurniture/${this.props.match.params.furnitureId}`,
         this.state.furniture
       )
       .then((res) => {
@@ -33,7 +44,7 @@ class FurnitureForm extends React.Component {
   render() {
     return (
       <div>
-        <h3 class="text-center">Add Furniture</h3>
+        <h3 class="text-center">Update Furniture</h3>
         <form className="w-50 mx-auto border p-3" onSubmit={this.handleSubmit}>
           <div className="mb-3">
             <label for="exampleInputName" className="form-label">
@@ -95,4 +106,4 @@ class FurnitureForm extends React.Component {
   }
 }
 
-export default FurnitureForm;
+export default FurnitureUpdate;

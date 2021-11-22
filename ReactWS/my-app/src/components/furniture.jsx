@@ -66,7 +66,7 @@ class Furniture extends Component {
                     <input
                       type="button"
                       value="Update"
-                      className="btn btn-secondary me-2"
+                      className="btn btn-outline-primary me-2"
                     />
                   </Link>
                   <input

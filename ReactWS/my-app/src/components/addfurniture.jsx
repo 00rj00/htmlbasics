@@ -7,6 +7,7 @@ class FurnitureForm extends React.Component {
       furnitureName: "",
       furnitureModel: "",
       furnitureColor: "",
+      furnitureId: 0,
       price: "",
     },
   };
@@ -43,6 +44,7 @@ class FurnitureForm extends React.Component {
               type="text"
               className="form-control"
               id="exampleInputName"
+              value={this.state.furniture.furnitureName}
               name="furnitureName"
               onChange={this.handleChange}
             />
@@ -55,6 +57,7 @@ class FurnitureForm extends React.Component {
               type="text"
               className="form-control"
               aria-describedby="emailHelp"
+              value={this.state.furniture.furnitureModel}
               name="furnitureModel"
               onChange={this.handleChange}
             />
@@ -67,6 +70,7 @@ class FurnitureForm extends React.Component {
               type="text"
               className="form-control"
               aria-describedby="emailHelp"
+              value={this.state.furniture.furnitureColor}
               name="furnitureColor"
               onChange={this.handleChange}
             />
@@ -79,6 +83,7 @@ class FurnitureForm extends React.Component {
               type="number"
               className="form-control"
               aria-describedby="emailHelp"
+              value={this.state.furniture.price}
               name="price"
               onChange={this.handleChange}
             />

@@ -13,7 +13,7 @@ class FurnitureUpdate extends React.Component {
   componentDidMount() {
     axios
       .get(
-        `http://localhost:8080/api/displayFurniture/getAllFurnitureDetails/getFurnitureDetails/${this.props.match.params.furnitureId}`
+        `http://localhost:8080/api/displayFurniture/getAllFurnitureDetails/furnitureId/${this.props.match.params.furnitureId}`
       )
       .then((res) => {
         console.log(res);
